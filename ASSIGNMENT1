@@ -1,0 +1,135 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyPviYsvLqvdKcn12oxsuhWC",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/2203A51506/AIML-BATCH-20/blob/main/ASSIGNMENT1\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "9mJmp0Au0upZ",
+        "outputId": "7a230638-0402-49d1-82c7-76e1e8f477f7"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "list= [4, 5, 6, 7]\n",
+            "array= [4 5 6 7]\n",
+            "type of list1: <class 'list'>\n",
+            "type of array1: <class 'numpy.ndarray'>\n",
+            "[ 6 11 13 17]\n",
+            "[ 4  1  1 -1]\n",
+            "[ 5 30 42 72]\n",
+            "[5.         1.2        1.16666667 0.88888889]\n",
+            "[        5      7776    117649 134217728]\n"
+          ]
+        }
+      ],
+      "source": [
+        " import numpy as np\n",
+        "list1=[4,5,6,7]\n",
+        "array1=np.array(list1)\n",
+        "print(\"list=\",list1)\n",
+        "print(\"array=\",array1)\n",
+        " print(\"type of list1:\",type(list1))\n",
+        "print(\"type of array1:\",type(array1))\n",
+        " a1=[5,6,7,8]\n",
+        "a2=[1,5,6,9]\n",
+        "a=np.add(a1,a2)\n",
+        "print(a)\n",
+        "s=np.subtract(a1,a2)\n",
+        "print(s)\n",
+        "m=np.multiply(a1,a2)\n",
+        "print(m)\n",
+        "d=np.divide(a1,a2)\n",
+        "print(d)\n",
+        "p=np.power(a1,a2)\n",
+        "print(p)\n",
+        " n1=input()\n",
+        "n2=input()\n",
+        "n=np.char.add(n1,n2)\n",
+        "print(n)\n",
+        " #sin\n",
+        "x=np.pi/4\n",
+        "sin_result=np.sin(x)\n",
+        "print(\"sin(x):\",sin_result)\n",
+        "\n",
+        "#log\n",
+        "x=10\n",
+        "log_result=np.log(x)\n",
+        "print(\"log(x):\",log_result)\n",
+        "\n",
+        "#log2\n",
+        "x=16\n",
+        "log2_result=np.log2(x)\n",
+        "print(\"log(x):\",log_result)\n",
+        "\n",
+        "#exp\n",
+        "x=2\n",
+        "exp_result=np.exp(x)\n",
+        "print(\"exp(x):\",exp_result)\n",
+        " import matplotlib.pyplot as plt\n",
+        "people = ['kiran', 'arun', 'vijay', 'varun']\n",
+        "age =[25, 30, 35, 40, 45]\n",
+        "height =[145, 151, 165, 173]\n",
+        "weight=[45, 55, 65, 75]\n",
+        "plt.scatter(weight, height)\n",
+        "plt.title(\"Relationship between Weight and Height of Patients\")\n",
+        "plt.ylabel(\"Height in Meters\")\n",
+        "plt.xlabel(\"Weight of Patients in Kgs\")\n",
+        "plt.show()\n",
+        " plt.figure(figsize=(12,4))\n",
+        "plt.title(\"People's weight in kgs\",fontsize=16,\n",
+        "fontstyle='italic')\n",
+        "plt.bar(x=people,height=weight, width=0.6,\n",
+        "color='orange',edgecolor='k',alpha=0.6)\n",
+        "plt.xlabel(\"People\",fontsize=15)\n",
+        "plt.xticks(fontsize=14,rotation=30)\n",
+        "plt.yticks(fontsize=14)\n",
+        "plt.ylabel(\"Weight (in kgs)\",fontsize=15)\n",
+        "plt.show()\n",
+        " plt.title(\"relation btw height and weight\")\n",
+        "plt.xlabel(\"height\")\n",
+        "plt.ylabel(\"weight\")\n",
+        "plt.bar(height,weight)\n",
+        " import numpy as np\n",
+        "plt.figure(figsize=(7,5))\n",
+        "# Main plot function 'hist'\n",
+        "plt.hist(weight,color='red',edgecolor='k', alpha=0.75,bins=5)\n",
+        "plt.title(\"Histogram of patient weight\",fontsize=18)\n",
+        "plt.xlabel(\"Weight in kgs\",fontsize=15)\n",
+        "plt.xticks(fontsize=15)\n",
+        "plt.yticks(fontsize=15)\n",
+        "plt.show()"
+      ]
+    }
+  ]
+}
